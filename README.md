@@ -1,2 +1,2 @@
-# SoftUni-Programming Fundamentals
+# SoftUni-Programming with JS
 Courses from my education
