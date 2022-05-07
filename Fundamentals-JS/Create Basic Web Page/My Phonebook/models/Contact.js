@@ -5,5 +5,5 @@ class Contact {
         this.number = number;
     }
 }
-//правим публичен каласа
+//make public class
 module.exports = Contact;
