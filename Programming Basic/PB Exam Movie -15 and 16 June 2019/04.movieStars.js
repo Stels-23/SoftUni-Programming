@@ -26,7 +26,7 @@ function movieStars(input) {
         index++;
         actor = input[index];
     }
-    if (buget > remuneration || remuneration === 'ACTION' || actor === "ACTION") {
+    if (remuneration === 'ACTION' || actor === "ACTION") {
         console.log(`We are left with ${buget.toFixed(2)} leva.`)
     } else {
         let needMoney = Math.abs(buget - remuneration);
