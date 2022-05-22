@@ -1,7 +1,6 @@
 function cookingByNumbers(number, command1, command2, command3, command4, command5) {
     let num = Number(number);
-    let commands = [];
-    commands.push(command1, command2, command3, command4, command5)
+    let commands = [command1, command2, command3, command4, command5];
     for (let command of commands) {
         switch (command) {
             case 'chop':
