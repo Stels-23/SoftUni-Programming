@@ -1,0 +1,44 @@
+function cookingByNumbers(n, p1, p2, p3, p4, p5) {
+    let inputAsN = Number(n);
+    let arrOfCommands = [p1, p2, p3, p4, p5];
+    let chop = function() {
+        return inputAsN / 2;
+    };
+    let dice = function() {
+        return Math.sqrt(inputAsN);
+    };
+    let spice = function() {
+        return inputAsN + 1;
+
+    };
+    let bake = function() {
+        return inputAsN * 3;
+
+    };
+    let fillet = function() {
+        return inputAsN * 0.80;
+    };
+    for (let i = 0; i < arrOfCommands.length; i++) {
+        let currentCommand = arrOfCommands[i];
+
+        switch (currentCommand) {
+            case 'chop':
+                inputAsN = chop(inputAsN);
+                break;
+            case 'dice':
+                inputAsN = dice(inputAsN)
+                break;
+            case 'spice':
+                inputAsN = spice(inputAsN)
+                break;
+            case 'bake':
+                inputAsN = bake(inputAsN)
+                break;
+            case 'fillet':
+                inputAsN = fillet(inputAsN)
+                break;
+        }
+        console.log(inputAsN);
+    }
+
+}
