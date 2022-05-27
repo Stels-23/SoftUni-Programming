@@ -10,11 +10,7 @@ function townPopulation(input) {
             result[town] = Number(population);
         }
     }
-    /*let keyAndValue = `${result.town} : ${result.population}`
-    console.log(keyAndValue);*/
-
-
-    for (let [key, value] of Object.entries(result)) {
+      for (let [key, value] of Object.entries(result)) {
         console.log(`${key} : ${value}`)
 
     }
