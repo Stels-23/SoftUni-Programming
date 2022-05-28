@@ -1,0 +1,16 @@
+function rotateArray(array, rotations) {
+    for (let index = 0; index < rotations; index++) {
+        //remove the last element from the arr -> pop
+        //add the first element to the start of the arr -> unshuft
+        let removeEl = array.unshift(array.pop());
+
+    }
+    console.log(array.join(' '))
+}
+rotateArray(['1', '2', '3', '4'], 2);
+rotateArray(['Banana',
+        'Orange',
+        'Coconut',
+        'Apple'
+    ],
+    15)
