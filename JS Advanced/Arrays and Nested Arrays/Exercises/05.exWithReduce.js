@@ -1,7 +1,7 @@
 function extractBigN(array) {
     let newArr = [];
     let biggestN = array[0];
-    newArr.push(array[0]);
+    newArr.push(biggestN);
     array.reduce((num1, num2, index, arr) => {
         if (biggestN <= num2) {
             newArr.push(num2);
