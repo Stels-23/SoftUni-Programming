@@ -12,7 +12,7 @@ function townsToJSON(array) {
         let currentTown = arr[0];
         let currentLatitude = Number(arr[1]).toFixed(2);
         let currentLongtitude = Number(arr[2]).toFixed(2);
-        let town = new Town(currentTown, currentLongtitude, currentLatitude, currentLongtitude);
+        let town = new Town(currentTown, currentLatitude, currentLongtitude);
         result.push(town);
 
     }
